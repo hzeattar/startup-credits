@@ -1,0 +1,65 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m5jvea8n7p461jhxpxb9jyzv
+  slug: sarvam
+  slug_aliases:
+    - sarvam-ai
+  name: Sarvam AI
+  domains:
+    - value: sarvam.ai
+      role: primary
+      valid_from: 2026-10-22T22:30:00.000Z
+  category: ai-ml
+profile:
+  summary: Sarvam AI develops speech, vision, and language model APIs.
+  description: Sarvam AI provides developer APIs for speech, multilingual language models, and document intelligence.
+  links:
+    site: https://www.sarvam.ai/
+sources:
+  - source_id: src_6e33dbb2e7b2cbe6124ed2269abb68ec7ea448358628071ac240010001db30e3
+    url: https://www.sarvam.ai/startup-program
+programs:
+  - program_id: prg_01m5jvea8r094htpgvnrfxn10q
+    program_slug: sarvam-startup-program
+    program_slug_aliases: []
+    title: Sarvam Startup Program
+    summary: Sarvam offers API credits and engineering support to startups.
+    source_ids:
+      - src_6e33dbb2e7b2cbe6124ed2269abb68ec7ea448358628071ac240010001db30e3
+offers:
+  - offer_id: off_01m5jvea8r02hvt9f9215ft2vy
+    program_id: prg_01m5jvea8r094htpgvnrfxn10q
+    offer_slug: six-to-twelve-months-api-credits
+    offer_slug_aliases: []
+    title: Six to twelve months of Sarvam API credits
+    summary: Approved startups receive API credits matched to their use case, stage, and expected scale, plus priority engineering support.
+    lifecycle:
+      status: active
+      effective_from: 2026-10-22T22:30:00.000Z
+    economics:
+      consideration:
+        kind: variable
+        description: Participants must display "Powered by Sarvam" branding in their product.
+      benefits:
+        - benefit_id: ben_api_credits
+          description: API credits last for the approved program term of six to twelve months. Unused credits do not roll over after the program ends.
+          kind: other
+        - benefit_id: ben_engineering_support
+          description: Priority support with direct access to Sarvam's engineering team.
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_existing_users
+        reason: external-verification
+        statement: Startups already using Sarvam APIs may apply for additional credits and priority support.
+    roles:
+      terms_authority_entity_id: ent_01m5jvea8n7p461jhxpxb9jyzv
+      access_operator_entity_id: ent_01m5jvea8n7p461jhxpxb9jyzv
+    access:
+      availability: public
+      method: form
+      url: https://www.sarvam.ai/startup-program
+    terms_url: https://www.sarvam.ai/startup-program
+    source_ids:
+      - src_6e33dbb2e7b2cbe6124ed2269abb68ec7ea448358628071ac240010001db30e3
