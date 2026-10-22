@@ -75,8 +75,8 @@ offers:
     access:
       availability: public
       method: form
-      url: https://www.cloudamqp.com/startup-program-application/?topic=sales&subject=LavinMQ%20Startup%20Program%20Application
-      instructions: Submit company information and describe the intended LavinMQ use.
+      url: https://www.cloudamqp.com/lavinmq-for-startups/
+      instructions: Follow Apply Now and submit company information and the intended LavinMQ use.
     terms_url: https://www.cloudamqp.com/lavinmq-for-startups/
     source_ids:
       - src_07175e5d7752b103ce922528050a40610bad4acb7c96f7e5e2ab1b7103f52423
