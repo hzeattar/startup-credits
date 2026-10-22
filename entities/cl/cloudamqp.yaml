@@ -1,0 +1,82 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m5jwbt5bx4yav61zpmra2f3m
+  slug: cloudamqp
+  slug_aliases: []
+  name: CloudAMQP
+  domains:
+    - value: cloudamqp.com
+      role: primary
+      valid_from: 2026-10-22T22:40:00.000Z
+  category: hosting-infra
+profile:
+  summary: CloudAMQP provides managed RabbitMQ and LavinMQ hosting.
+  description: CloudAMQP is a managed messaging platform hosting RabbitMQ and its own LavinMQ broker.
+  links:
+    site: https://www.cloudamqp.com/
+sources:
+  - source_id: src_4574a91cbfffaafd8e7ffaccb2fea10551250f01d993f414e713f6d71af15ba1
+    url: https://www.cloudamqp.com/about/
+  - source_id: src_07175e5d7752b103ce922528050a40610bad4acb7c96f7e5e2ab1b7103f52423
+    url: https://www.cloudamqp.com/lavinmq-for-startups/
+programs:
+  - program_id: prg_01m5jwbt5cfcy8gsbdynn5qj3g
+    program_slug: lavinmq-startup-program
+    program_slug_aliases: []
+    title: LavinMQ Startup Program
+    summary: A three-year LavinMQ discount and support program for early-stage companies.
+    source_ids:
+      - src_07175e5d7752b103ce922528050a40610bad4acb7c96f7e5e2ab1b7103f52423
+offers:
+  - offer_id: off_01m5jwbt5c1hcn4evn1ac16sp0
+    program_id: prg_01m5jwbt5cfcy8gsbdynn5qj3g
+    offer_slug: three-year-lavinmq-startup-discounts
+    offer_slug_aliases: []
+    title: Three-year LavinMQ startup discounts
+    summary: Accepted startups receive 70% off in year one, 50% in year two, and 25% in year three, with onboarding and technical support.
+    lifecycle:
+      status: active
+      effective_from: 2026-10-22T22:40:00.000Z
+    economics:
+      consideration:
+        kind: variable
+        description: Participants pay discounted LavinMQ hosting fees, then standard pricing after the program.
+      benefits:
+        - benefit_id: ben_launch_discount
+          description: Launch Tier provides 70% off LavinMQ during months 1 through 12.
+          kind: discount
+          percentage:
+            kind: exact
+            basis_points: 7000
+        - benefit_id: ben_growth_discount
+          description: Growth Tier provides 50% off LavinMQ during months 13 through 24.
+          kind: discount
+          percentage:
+            kind: exact
+            basis_points: 5000
+        - benefit_id: ben_scale_discount
+          description: Scale Tier provides 25% off LavinMQ during months 25 through 36. Standard pricing applies after the program.
+          kind: discount
+          percentage:
+            kind: exact
+            basis_points: 2500
+        - benefit_id: ben_support
+          description: Hands-on onboarding and ongoing technical support.
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_startup_review
+        reason: external-verification
+        statement: Generally, early-stage startups that can benefit from LavinMQ are evaluated on company age, funding stage, team size, and product use-case for LavinMQ.
+    roles:
+      terms_authority_entity_id: ent_01m5jwbt5bx4yav61zpmra2f3m
+      access_operator_entity_id: ent_01m5jwbt5bx4yav61zpmra2f3m
+    access:
+      availability: public
+      method: form
+      url: https://www.cloudamqp.com/startup-program-application/?topic=sales&subject=LavinMQ%20Startup%20Program%20Application
+      instructions: Submit company information and describe the intended LavinMQ use.
+    terms_url: https://www.cloudamqp.com/lavinmq-for-startups/
+    source_ids:
+      - src_07175e5d7752b103ce922528050a40610bad4acb7c96f7e5e2ab1b7103f52423
